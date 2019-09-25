@@ -13,6 +13,8 @@ class Transfer
   end 
   
   def execute_transaction
+    #senders.balance >>> receiver.balance 
+    #unless sender balance isnt enough
     
   end 
   
