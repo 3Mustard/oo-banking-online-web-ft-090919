@@ -16,7 +16,9 @@ class Transfer
     #senders.balance >>> receiver.balance 
     #unless sender balance isnt enough
     if self.valid?
-      self.sender.
+      self.sender.balance -= self.amount 
+      self.receiver.balance += self.amount 
+    end 
   end 
   
   def reverse_transfer
