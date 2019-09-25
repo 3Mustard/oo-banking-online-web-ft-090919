@@ -17,7 +17,8 @@ class Transfer
     #unless sender balance isnt enough
     if self.valid?
       self.sender.balance -= self.amount 
-      self.receiver.balance += self.amount 
+      self.receiver.balance += self.amount
+      self.status = "pending"
     end 
   end 
   
