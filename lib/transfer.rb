@@ -15,10 +15,10 @@ class Transfer
   def execute_transaction
     #senders.balance >>> receiver.balance 
     #unless sender balance isnt enough
-    if self.valid? && @sender.balance > 
-      self.sender.balance -= self.amount 
-      self.receiver.balance += self.amount
-      self.status = "complete"
+    if self.valid? && @sender.balance > @amount
+      @sender.balance -= @amount 
+      @receiver.balance += @amount
+      @status = "complete"
     end 
   end 
   
