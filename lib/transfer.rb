@@ -13,8 +13,6 @@ class Transfer
   end 
   
   def execute_transaction
-    #senders.balance >>> receiver.balance 
-    #unless sender balance isnt enough
     if self.valid? && @sender.balance > @amount
       @sender.balance -= @amount 
       @receiver.balance += @amount
